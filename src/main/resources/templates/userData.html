@@ -1,0 +1,58 @@
+<!--/*
+*   Created by IntelliJ IDEA Ultimate, 2020
+*   User: Abhishek
+*   Date: 15-06-2020
+*   Time: 05:43 AM
+*/-->
+
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User List</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<section id="user-data">
+    <div class="head">
+        <img alt="logo" src="img/smartbit.png">
+        <h4>Platform that convert your business to Digital.</h4>
+    </div>
+    <div class="register">
+        <a class="btn" th:href="@{/register}">Add Customer</a>
+        <a class="btn" style="margin-left: 10px" th:href="@{/logout}">Logout</a>
+    </div>
+    <table class="table user-table">
+        <thead class="thead-light-head">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Address</th>
+            <th scope="col">Ingredients</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="data : ${userList}">
+            <td th:text="${data.id}"></td>
+            <td th:text="${data.firstName}"></td>
+            <td th:text="${data.lastName}"></td>
+            <td th:text="${data.phoneNumber}"></td>
+            <td th:text="${data.address}"></td>
+            <td th:text="${data.intregients}"></td>
+            <td th:text="${data.quantity}"></td>
+            <td th:text="${data.price}"></td>
+            <td>
+                <a class="btn delete" th:href="@{delete(id = ${data.id})}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+</body>
+</html>
