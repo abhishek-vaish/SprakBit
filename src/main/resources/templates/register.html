@@ -1,0 +1,61 @@
+<!--
+/*
+*   Created by IntelliJ IDEA Ultimate, 2020
+*   User: Abhishek
+*   Date: 11-06-2020
+*   Time: 05:06 AM
+*/
+-->
+
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Register</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<section id="form">
+    <div class="logo">
+        <img src="img/smartbit.png">
+        <h4>Platform that convert your business to Digital.</h4>
+    </div>
+    <div class="user-details">
+        <div class="user-details-content">
+            <h6>User Details<span class="star">*</span></h6>
+        </div>
+        <div class="user-details-form">
+            <form method="post" th:action="@{saveUser}" th:object="${userRecords}">
+                <div class="name">
+                    FirstName : <input class="first-name" name="first_name" th:field="*{firstName}" type="text">
+                    LastName : <input class="last-name" name="last_name" th:field="*{lastName}" type="text">
+                </div>
+                <div class="phone-number">
+                    Phone Number : <input name="phone_number" th:field="*{phoneNumber}" type="tel">
+                </div>
+                <div class="address">
+                    Address : <input name="address" th:field="*{address}" type="text">
+                </div>
+                <div class="ingredients">
+                    Ingredients : <input name="ingredients" th:field="*{intregients}" type="text">
+                </div>
+                <div class="purchase">
+                    Quantity : <input class="quantity" name="quantity" th:field="*{quantity}" type="number">
+                    Price : <input class="price" name="price" th:field="*{price}" type="number">
+                </div>
+                <div class="save">
+                    <input class="btn" type="submit" value="Save">
+                </div>
+                <div class="list">
+                    <a class="btn" th:href="@{/users}"><b>< Back to user list</b></a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</section>
+
+
+</body>
+</html>
