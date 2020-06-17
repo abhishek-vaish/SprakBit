@@ -12,6 +12,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @EnableWebSecurity
 @Configuration
@@ -20,6 +21,7 @@ public class LoginPage extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
+                .passwordEncoder(new BCryptPasswordEncoder())
                 .withUser("demo")
                 .password("$2a$10$SxNTPLZ49I61aa/eizQUM.4im7gQ3FidnH7ZTRlUJGTZzNKN98qdS")
                 .roles("ADMIN");
