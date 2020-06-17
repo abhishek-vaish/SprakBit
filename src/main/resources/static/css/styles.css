@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  position: center;
+  background: url("/img/person-writing-on-notebook-669615.jpg") no-repeat;
+  background-size: cover;
+}
+
+.content {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.content h1 {
+  transition: ease-in-out;
+}
+
+img {
+  width: 150px;
+}
+
+.content .btn {
+  background-color: #a3131d;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.content .btn:focus {
+  border: none;
+}
+
+#form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.user-details {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.user-details-content {
+  background-color: #a3131d;
+  color: #ffffff;
+  padding: 10px 0px 10px 20px;
+}
+
+.star {
+  font-size: smaller;
+}
+
+.user-details-form {
+  background-color: rgb(255, 250, 225);
+  padding: 20px;
+}
+
+.user-details-form .name .first-name {
+  margin-right: 50px;
+  width: 250px;
+}
+
+.user-details-form .name .last-name {
+  width: 250px;
+}
+
+.user-details-form .phone-number {
+  margin-top: 10px;
+}
+
+.user-details-form .address {
+  margin-top: 10px;
+}
+
+.user-details-form .ingredients {
+  margin-top: 10px;
+}
+
+.user-details-form .purchase {
+  margin-top: 10px;
+}
+
+.user-details-form .purchase .quantity {
+  margin-right: 50px;
+  width: 250px;
+}
+
+.user-details-form .purchase .price {
+  width: 250px;
+}
+
+.user-details-form .save {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.user-details-form .save .btn {
+  background-color: #a3131d;
+  border-radius: 50px;
+  padding: 10px;
+  color: #ffffff;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.list a {
+  color: #a3131d;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.logo h4 {
+  text-transform: uppercase;
+  color: #a3131d;
+  padding-top: 10px;
+}
+
+#user-data {
+  width: 100%;
+  padding: 30px;
+}
+
+.thead-light-head {
+  background-color: #a3131d;
+  color: #ffffff;
+}
+
+.delete {
+  border: 2px #a3131d solid;
+  border-radius: 10px;
+  color: #a3131d;
+}
+
+.delete:focus {
+  background-color: #a3131d;
+  color: #ffffff;
+}
+
+.head {
+  display: flex;
+  width: 100%;
+  color: #a3131d;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.head h4 {
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.register {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.register .btn {
+  background-color: #ebc507;
+  color: #a3131d;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.login-logo {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.login-logo img {
+  width: 150px;
+}
+
+.login-logo h3 {
+  text-transform: uppercase;
+  color: #a3131d;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.login-logo .bit {
+  color: #ebc507;
+}
+
+.login-logo .login {
+  margin-top: 10px;
+}
+
+.login-logo .login .error {
+  color: red;
+  border: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.26);
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login-logo .login .logout {
+  color: #228b22;
+  border: 2px solid #228b22;
+  background-color: rgba(34, 139, 34, 0.26);
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.login-logo .login .login-btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.login-logo .login .login-btn .btn {
+  padding: 5px 20px 5px 20px;
+  border-radius: 50px;
+  background-color: #a3131d;
+  color: #ffffff;
+}
+
+#username {
+  padding-left: 4px;
+}
+
+#password {
+  padding-left: 4px;
+}
+
+
