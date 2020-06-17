@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>257a3a1f-6232-40aa-9e1b-17f29e1c2c8c.TABLE:securitydatabase.user_purchase_records</OriginalElement>
+  <nodes>
+    <node x="137.0" y="146.0">257a3a1f-6232-40aa-9e1b-17f29e1c2c8c.TABLE:securitydatabase.user_purchase_records</node>
+    <node x="-249.0" y="120.0">257a3a1f-6232-40aa-9e1b-17f29e1c2c8c.TABLE:securitydatabase.user_records</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="257a3a1f-6232-40aa-9e1b-17f29e1c2c8c.TABLE:securitydatabase.user_purchase_records" target="257a3a1f-6232-40aa-9e1b-17f29e1c2c8c.TABLE:securitydatabase.user_records">
+      <point x="0.0" y="-63.0" />
+      <point x="0.0" y="84.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="77.5" y="204.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
